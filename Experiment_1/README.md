@@ -6,7 +6,7 @@
 - **Name:** Ridhima Gulati 
 - **UID:** 24BCY70132 
 - **Branch:** AIT-CSE(Cyber Security) 
-- **Section:** 24AIT-KRG2
+- **Section:** 24AIT-KRG-G2
 - **Semester:** 4 
 - **Subject:** DataBase Management System 
 - **Date of Performance:** 13/01/2026  
