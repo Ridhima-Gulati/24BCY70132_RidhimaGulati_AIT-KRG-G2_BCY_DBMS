@@ -111,6 +111,6 @@ ORDER BY avg_salary DESC;
 ## Screenshot
 <img src="Experiment-2 Screenshots/Screenshot-1.png" width="700">
 <img src="Experiment-2 Screenshots/Screenshot-2.png" width="700">
-<img src="Experiment-2 Screenshots/Screenshot-3.png" width="700">
+<img src="Experiment-2 Screenshots/Screenshot -3.png" width="700">
 <img src="Experiment-2 Screenshots/Screenshot-4.png" width="700">
-<img src="Experiment-2 Screenshots/Screenshot-5.png" width="700">
+<img src="Experiment-2 Screenshots/Screenshot -5.png" width="700">
