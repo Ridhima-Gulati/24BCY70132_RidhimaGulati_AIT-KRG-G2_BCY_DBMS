@@ -109,4 +109,4 @@ ORDER BY avg_salary DESC;
 ---
 
 ## Leetcode Screenshot
-![Screenshot](https://leetcode.com/problems/combine-two-tables/submissions/1899466571/)
+<img src="Experiment_2/Leetcode_175_EXPERIMENT-2.png" width="700">
