@@ -1,76 +1,47 @@
-  CREATE TABLE Students (
-      id NUMERIC(10,0) PRIMARY KEY,
-      name VARCHAR(50),
-      city VARCHAR(30),
-      marks NUMERIC(10,0)
-  );
-
-
-  INSERT INTO Students VALUES (1, 'Aman', 'Mohali', 85);
-  INSERT INTO Students VALUES (2, 'Rohit', 'Mohali', 78);
-  INSERT INTO Students VALUES (3, 'Neha', 'Mohali', 92);
-  INSERT INTO Students VALUES (4, 'Simran', 'Amritsar', 88);
-  INSERT INTO Students VALUES (5, 'Karan', 'Amritsar', 75);			
-  
-  CREATE TABLE Students (
-    id NUMERIC PRIMARY KEY,
-    name VARCHAR(50),
-    city VARCHAR(30),
-    marks NUMERIC(10,0)
+ CREATE TABLE employee1(
+    emp_id NUMERIC PRIMARY KEY,
+    emp_name VARCHAR(50),
+    department VARCHAR(50),
+    salary NUMERIC(10,2),
+    joining_date DATE[ ]
 );
 
+ Insertion Of Records:
+INSERT INTO employee1 VALUES (101, 'Amit', 'IT', 19000, '2020-02-12');
+INSERT INTO employee1 VALUES (102, 'Priya', 'HR', 22000, '2019-03-10');
+INSERT INTO employee1 VALUES (103, 'Rahul', 'Sales', 35000, '2021-07-18');
+INSERT INTO employee1 VALUES (104, 'Neha', 'IT', 55000, '2018-09-22');
+INSERT INTO employee1 VALUES (105, 'Rohan', 'Finance', 32000, '2022-01-05');
+INSERT INTO employee1 VALUES (106, 'Sara', 'Sales', 13000, '2020-12-03');
+INSERT INTO employee1 VALUES (107, 'Vikram', 'HR', 12000, '2017-04-11');
+
+SELECT * FROM employee1;
 
 
-INSERT INTO Students VALUES (1, 'Aman', 'Mohali', 85);
-INSERT INTO Students VALUES (2, 'Rohit', 'Mohali', 78);
-INSERT INTO Students VALUES (3, 'Neha', 'Mohali', 92);
-INSERT INTO Students VALUES (4, 'Simran', 'Amritsar', 88);
-INSERT INTO Students VALUES (5, 'Karan', 'Amritsar', 75);
+SELECT department, AVG(salary) AS avg_salary
+FROM employee1
+GROUP BY department;
 
 
----
--- COUNT NUMBER OF STUDENT IN EACH CITY
+SELECT department, AVG(salary) AS avg_salary
+FROM employee1
+WHERE salary > 20000
+GROUP BY department;
+ 
 
--- (I)
-SELECT CITY ,COUNT(*) AS COUNT_STUDNETS
-FROM STUDENTS
-GROUP BY CITY
--- (II)
-
-SELECT CITY ,COUNT(ID) AS COUNT_STUDNETS
-FROM STUDENTS
-GROUP BY CITY
+SELECT department, AVG(salary) AS avg_salary
+FROM employee1
+GROUP BY department
+HAVING AVG(salary) > 30000;
 
 
---- SORT ON THE BASIS OF COUNT OF STUDENTS IN EACH CITY
-
--- (I)
-SELECT CITY ,COUNT(ID) AS COUNT_STUDNETS
-FROM STUDENTS
-GROUP BY CITY
-ORDER BY COUNT_STUDNETS ASC
-
--- (II)
-
-SELECT CITY ,COUNT(*) AS COUNT_STUDNETS
-FROM STUDENTS
-GROUP BY CITY
-ORDER BY COUNT(*) ASC
-
--- FIND CITIES HAVING COUNT AT LEAST 3
+SELECT department, AVG(salary) AS avg_salary
+FROM employee1
+WHERE salary > 20000
+GROUP BY department
+HAVING AVG(salary) > 30000
+ORDER BY avg_salary DESC;
 
 
-SELECT CITY ,COUNT(ID) AS COUNT_STUDNETS
-FROM STUDENTS
-GROUP BY CITY
-HAVING COUNT(ID)>=3
-
------
--- FIND AVERAGE MARKS OF EACH CITY
 
 
-SELECT CITY ,AVG(MARKS)::NUMERIC(10,2) AS AVERAGE_MARKS
-FROM STUDENTS
-GROUP BY CITY
-
---SUM,MIN,MAX
