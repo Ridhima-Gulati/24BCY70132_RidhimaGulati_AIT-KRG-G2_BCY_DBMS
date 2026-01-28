@@ -109,4 +109,4 @@ ORDER BY avg_salary DESC;
 ---
 
 ## Leetcode Screenshot
-<img src="Experiment_2/Leetcode_175_EXPERIMENT-2.png" width="700">
+<img src="Leetcode_175_EXPERIMENT-2.png" width="700">
