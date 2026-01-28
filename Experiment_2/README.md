@@ -68,7 +68,7 @@ FROM employee1
 GROUP BY department;
 
 ```
-
+## Step 2.2: Filtering Data
 ```sql
 SELECT department, AVG(salary) AS avg_salary
 FROM employee1
@@ -76,6 +76,7 @@ WHERE salary > 20000
 GROUP BY department;
 
 ```
+## Step 2.3: Filtering Data
 ```sql
 SELECT department, AVG(salary) AS avg_salary
 FROM employee1
