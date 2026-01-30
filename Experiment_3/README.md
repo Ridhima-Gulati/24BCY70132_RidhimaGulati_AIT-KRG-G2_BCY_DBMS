@@ -97,15 +97,21 @@ END;
 ## Input / Output Details
 Input
 - PL/SQL commands for declaring variables, executing statements, and displaying output using DBMS_OUTPUT.PUT_LINE.
+
 ---
+
 <img src="Experiment-3 Screenshots/Screenshot-1.png" width="700">
+
 ---
+
 Output
 - Successful execution of the PL/SQL program displaying:
 - Employee Id
 - Employee Name
 - Employee Salary
+
 ---
+
 <img src="Experiment-3 Screenshots/Screenshot-2.png" width="700">
 
 ---
