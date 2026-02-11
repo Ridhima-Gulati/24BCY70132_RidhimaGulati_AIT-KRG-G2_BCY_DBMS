@@ -30,7 +30,7 @@ To design and implement PL/SQL programs utilizing conditional control statements
 
 ---
 
-## ProblenM Statement
+## Problem Statement
 Develop and execute PL/SQL programs that demonstrate the use of conditional control statements. The programs should employ IF–ELSE, IF–ELSIF–ELSE, ELSIF ladder, and CASE statements to evaluate given conditions and control the flow of execution accordingly.
 
 ---
