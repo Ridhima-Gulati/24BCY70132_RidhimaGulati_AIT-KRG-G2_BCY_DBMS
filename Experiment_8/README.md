@@ -33,7 +33,8 @@ To design and implement a stored procedure that accepts gender as an input param
 ---
 
 ## Problem Statement
-Organizations often require flexible reporting mechanisms to analyze workforce distribution based on gender for compliance and internal analytics. This experiment focuses on creating a modular procedure that retrieves employee data from a table and returns the gender-based employee count using dynamic input parameters to ensure reusable logic for companies like CData and Toddle.
+Organizations often require flexible reporting mechanisms to analyze workforce distribution based on gender for compliance and internal analytics. This experiment focuses on creating a modular procedure that retrieves employee data from a table and returns the gender-based employee count using dynamic input parameters to ensure reusable logic for companies like CData and Toddle. 
+
 ---
 
 PROGRAM:
